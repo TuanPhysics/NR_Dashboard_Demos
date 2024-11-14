@@ -1,0 +1,545 @@
+[
+    {
+        "id": "005a300fa33667ee",
+        "type": "tab",
+        "label": "Flow 1: Temp Humid",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2b564efe74b0eb4c",
+        "type": "tab",
+        "label": "Flow 2: Slider",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2cf848d5231e80ce",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Bảng điều khiển IoT",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "icon",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1d10a695c381e2ba",
+        "type": "ui_tab",
+        "name": "Temp Humid",
+        "icon": "fa-thermometer-full",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "175c341989c8b634",
+        "type": "ui_group",
+        "name": "Humidity",
+        "tab": "1d10a695c381e2ba",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ef8309dbf913a432",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "1d10a695c381e2ba",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "41ea38e3e723e959",
+        "type": "ui_tab",
+        "name": "Slider Control",
+        "icon": "fa-sliders",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d8d00383567a2904",
+        "type": "ui_group",
+        "name": "Slider Control",
+        "tab": "41ea38e3e723e959",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b4e930237052b3ce",
+        "type": "inject",
+        "z": "005a300fa33667ee",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 142,
+        "wires": [
+            [
+                "66cb6def1b81884e"
+            ]
+        ]
+    },
+    {
+        "id": "92405a87bd4353fe",
+        "type": "inject",
+        "z": "005a300fa33667ee",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 402,
+        "wires": [
+            [
+                "dcd6f8642d1fc6f1"
+            ]
+        ]
+    },
+    {
+        "id": "66cb6def1b81884e",
+        "type": "function",
+        "z": "005a300fa33667ee",
+        "name": "TemperatureGen",
+        "func": "var msg = {};\n\nmsg.payload = Math.round(Math.random() * 100);\nmsg.topic = \"Temp\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 142,
+        "wires": [
+            [
+                "d114e64d59b1f248",
+                "1bb1fe1fc4d60350",
+                "094063bd1f4365cb"
+            ]
+        ]
+    },
+    {
+        "id": "dcd6f8642d1fc6f1",
+        "type": "function",
+        "z": "005a300fa33667ee",
+        "name": "HumidityGen",
+        "func": "var msg = {};\n\nmsg.payload = Math.round(Math.random() * 100);\nmsg.topic = \"Humid\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 402,
+        "wires": [
+            [
+                "e917bb45f3dfb459",
+                "0e75429878be60b1",
+                "d49588c392180c28"
+            ]
+        ]
+    },
+    {
+        "id": "d114e64d59b1f248",
+        "type": "debug",
+        "z": "005a300fa33667ee",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 82,
+        "wires": []
+    },
+    {
+        "id": "e917bb45f3dfb459",
+        "type": "debug",
+        "z": "005a300fa33667ee",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 342,
+        "wires": []
+    },
+    {
+        "id": "1bb1fe1fc4d60350",
+        "type": "ui_gauge",
+        "z": "005a300fa33667ee",
+        "name": "",
+        "group": "ef8309dbf913a432",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temp.",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 710,
+        "y": 142,
+        "wires": []
+    },
+    {
+        "id": "d49588c392180c28",
+        "type": "ui_chart",
+        "z": "005a300fa33667ee",
+        "name": "",
+        "group": "175c341989c8b634",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Humid. vs Time",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 740,
+        "y": 462,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "094063bd1f4365cb",
+        "type": "ui_chart",
+        "z": "005a300fa33667ee",
+        "name": "",
+        "group": "ef8309dbf913a432",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Temp. vs Time",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 740,
+        "y": 202,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0e75429878be60b1",
+        "type": "ui_gauge",
+        "z": "005a300fa33667ee",
+        "name": "",
+        "group": "175c341989c8b634",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humid.",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 720,
+        "y": 402,
+        "wires": []
+    },
+    {
+        "id": "f0199b654611d8b9",
+        "type": "ui_slider",
+        "z": "2b564efe74b0eb4c",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "d8d00383567a2904",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 210,
+        "y": 200,
+        "wires": [
+            [
+                "7803d60c900c1d99",
+                "dc16bdb4dbfaf060"
+            ]
+        ]
+    },
+    {
+        "id": "7803d60c900c1d99",
+        "type": "ui_gauge",
+        "z": "2b564efe74b0eb4c",
+        "name": "",
+        "group": "d8d00383567a2904",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 390,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "dc16bdb4dbfaf060",
+        "type": "ui_chart",
+        "z": "2b564efe74b0eb4c",
+        "name": "",
+        "group": "d8d00383567a2904",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 390,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    }
+]
