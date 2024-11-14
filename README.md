@@ -23,5 +23,5 @@ Các dự án thực hành, học tập việc tạo bảng điều khiển và 
 ## Dự án 3: Giao tiếp hiển thị số liệu qua MQTT Broker 
 
 Dự án này bao gồm hai kho mã nguồn 
-1. Dashboard cho hiển thị nhiệt độ, độ ẩm, và thanh điều khiển độ sáng trên Node-RED 
-2. Mã nguồn firmware trên ESP32, kèm các file thiết lập mô phỏng Wokwi trên VS-Code
+1. Dashboard cho hiển thị nhiệt độ, độ ẩm, và thanh điều khiển độ sáng trên Node-RED. [Link](./DHT22_LED_Dashboard/) 
+2. Mã nguồn firmware trên ESP32, kèm các file thiết lập mô phỏng Wokwi trên VS-Code. [Link](./DHT22_MQTT_LED_ESP32/)
