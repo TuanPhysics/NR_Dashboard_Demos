@@ -1,4 +1,8 @@
-## Flow 1: Đồng hồ đo và Đồ thị 
+# Bảng điều khiển IoT bằng Dashboard UI trong Node-RED 
+
+Các dự án thực hành, học tập việc tạo bảng điều khiển và giám sát cho các dự án IoT bằng Dashboard UI trên Node-RED 
+
+## Dự án 1: Đồng hồ đo và Đồ thị 
 
 - Sử dụng Gauge node (đồng hồ đo) và Chart node (đồ thị) để hiển thị các thông số nhiệt độ và độ ẩm
 - Nhiệt độ và độ ẩm được mô phỏng bằng hàm Math.random trong function nodes
@@ -7,17 +11,17 @@
     + Thiết kế một bảng điều khiển đơn giản từ thiết kế flow với các nodes
     + Các thành phần cơ bản của dashboard: Layout >> Tabs >> Groups >> Widget 
     + Một số cách tùy biến hiển thị trên dashboard ... 
+- [Kho mã dự án](./TempGaugeChartUI/)
 
-## Flow 2: Thanh điều khiển slider 
+## Dự án 2: Thanh điều khiển slider 
 
 - Dashboard ngoài chức năng hiển thị (giám sát thông số) còn có chức năng điều khiển 
-- Dự án này sử dụng một thanh điều khiển (slider) để điều khiển tham số hiện lên đồ thị và đồng hồ đo trong cùng một Group
+- Dự án này sử dụng một thanh điều khiển (slider) để điều khiển tham số hiện lên đồ thị 
 - Một số node điều khiển khác như nút bấm, bạn có thể tự khám phá 
+- [Kho mã dự án](./TempGaugeChartUI/)
 
-## Hướng dẫn tải mã và khởi chạy 
+## Dự án 3: Giao tiếp hiển thị số liệu qua MQTT Broker 
 
-- Fork repo này về tài khoản github của bạn
-- Clone dự án đã fork trên github của bạn về máy tính cá nhân 
-- Vào thư mục dự án tải về `cd TempGaugeChartUI`
-- Chạy lệnh `npm install` để cài đặt các "thư viện" cần thiết của dự án (được xác định trong `package.json`) 
-- `node-red -u .` để khởi chạy node-red tại thư mục chứa mã nguồn này, bấm vào đường dẫn địa chỉ để vào trình duyệt soạn thảo flow.
+Dự án này bao gồm hai kho mã nguồn 
+1. Dashboard cho hiển thị nhiệt độ, độ ẩm, và thanh điều khiển độ sáng trên Node-RED 
+2. Mã nguồn firmware trên ESP32, kèm các file thiết lập mô phỏng Wokwi trên VS-Code
